@@ -110,7 +110,8 @@ app.get('/mais', function (req, res) {
   res.sendFile( __dirname + "/" + "mais.html" );
 });
 
-var server = app.listen(8081, function () {
+var porta = process.env.PORT || 8081;
+var server = app.listen(porta, function () {
    var host = server.address().address
    var port = server.address().port
    

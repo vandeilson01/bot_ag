@@ -14,6 +14,7 @@ app.listen(porta, function () {
 app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.send('Hello GET');
+   whatsapp2();
 })
 
 // This responds a POST request for the homepage

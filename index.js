@@ -15,6 +15,8 @@ app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.send('Hello GET');
    whatsapp2();
+
+   res.sendFile( __dirname + "/" + "index.html" );
 })
 
 // This responds a POST request for the homepage

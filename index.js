@@ -1,6 +1,15 @@
 var express = require('express');
 var app = express();
 
+var porta = process.env.PORT || 8081;
+app.listen(porta, function () {
+//    var host = server.address().address
+//    var port = server.address().port
+   
+   console.log("Example app listening at http://%s:%s");
+}) 
+
+
 // This responds with "Hello World" on the homepage
 app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
@@ -110,13 +119,6 @@ app.get('/mais', function (req, res) {
   res.sendFile( __dirname + "/" + "mais.html" );
 });
 
-var porta = process.env.PORT || 8081;
-app.listen(porta, function () {
-//    var host = server.address().address
-//    var port = server.address().port
-   
-   console.log("Example app listening at http://%s:%s");
-})
 
 
 function venom(){

@@ -71,11 +71,11 @@ var mysql = require('mysql');
   
 // create a connection variable with the required details
 var con = mysql.createConnection({
-  host: 'localhost',
-  port: "3306",
-  user: "agendaco_dentistas",
-  password: "fW2~q1y%qeZK",
-  database: "agendaco_dentistas"
+  host: '',
+  port: "",
+  user: "",
+  password: "",
+  database: ""
 });
   
 // make to connection to the database.
